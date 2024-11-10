@@ -1,19 +1,26 @@
-In this building and manual we called the build file grepfile, you can change this by editing the last word on line 5 from "grepfile" to anything that fits your needs.
+# Build Instructions
 
-# Building
-g++ needed.
+`This project requires g++ for building.`
+
+**Note**: The build output file is named `grepfile` by default. To change this, edit the last word on line 5 replacing `"grepfile"` with any name that suits your needs.
+
+### Building
+`Ensure g++ is installed`
+
 cd grepfile
 g++ -Wall main.cpp -o grepfile
 
-# Running
-usage from anywhere: 
-put in a folder that is in the PATH and use {WhatYouCalledTheBuiltFile} from anywhere
-specify file path:
-use /dir/to/grepfile/build/grepfile to run the app.
+### Running
 
-# How to use
-Help command:
+#### Usage from anywhere:
+1. Move the built file into a directory in your `PATH` to use it globally with `"grepfile"`.
+2. Alternatively, run it directly using the full path:
+`"/path/to/grepfile/build/grepfile"`
+
+### How to Use
+
+#### Help command:
 grepfile --help
 
-Normal usage:
-grepfile -f {FileNameToSearch} -s "{WhatYouWantToSeachFor}"
+#### Normal usage:
+grepfile -f [FileNameToSearch] -s "[TextToSearchFor]"
